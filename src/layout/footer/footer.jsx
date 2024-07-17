@@ -1,11 +1,16 @@
 import React from "react";
 import { Input } from "../../components/input";
 import { Button } from "../../components/button";
+import { Facebook } from "../../assets/footer/facebook";
+import { Twitter } from "../../assets/footer/twitter";
+import { Pinterest } from "../../assets/footer/pinterest";
+import { Instagram } from "../../assets/footer/instagram";
+import { Logo } from "../../assets/logo";
 
 export const Footer = () => {
   return (
     <div className="container mx-auto px-4">
-      <div className="pt-[105px] pb-[105px] pl-[70px] pr-[70px] bg-[url('/footer-bg.jpg')] bg-cover bg-center mb-[100px] rounded-[30px]">
+      <div className="pt-[105px] pb-[105px] pl-[70px] pr-[70px] bg-[url('/footerBackground.png')] bg-cover bg-center mb-[100px] rounded-[30px]">
         <ul className="flex flex-col lg:flex-row justify-between items-center">
           <li>
             <h1 className="w-full lg:w-[350px] text-nineth text-[42px] font-[800] mb-[5px] text-center lg:text-left">
@@ -64,14 +69,11 @@ export const Footer = () => {
             </div>
           </li>
         </ul>
+        <div className="h-96 border-black "></div>
         <ul className="text-center lg:text-left text-seventh">
           <li className="w-full lg:w-[400px]">
             <a href="#">
-              <img
-                className="mb-[20px] mx-auto lg:ml-[30px]"
-                src="/header-logo.svg"
-                alt="logo"
-              />
+              <Logo />
             </a>
             <div className="mb-[20px]">
               <p className="w-full lg:w-[280px] font-[400] text-[11px] text-seventh mb-[40px] mx-auto lg:mx-0">
@@ -81,22 +83,22 @@ export const Footer = () => {
               <ul className="flex justify-center  lg:justify-start items-center gap-3 w-[280px] text-seventh mx-auto lg:mx-0">
                 <li>
                   <a href="#">
-                    <img src="/footer-icon.svg" alt="icon" />
+                    <Instagram />
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <img src="/footer-icon2.svg" alt="icon" />
+                    <Facebook />
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <img src="/footer-icon3.svg" alt="icon" />
+                    <Twitter />
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <img src="/footer-icon4.svg" alt="icon" />
+                    <Pinterest />
                   </a>
                 </li>
               </ul>

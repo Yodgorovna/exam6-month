@@ -23,8 +23,8 @@ export default {
         nineth: "#ffff",
       },
       fontFamily: {
-        primary: ["Roboto", "sans-serif"],
-        secondary: ["Open Sans", "sans-serif"],
+        primary: ["Roboto"],
+        secondary: ["Open Sans"],
         third: ["Yellowtail"],
       },
     },
